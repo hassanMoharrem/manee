@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#000000"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--load all styles for font aswesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- My own style -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<nav class="py-2  fixed-top bg-nav-white">
+    <div class="container-fluid pe-1 ps-0">
+        <div class="row justify-content-center w-100 mx-auto">
+            <div class="col-md-3 my-auto my-auto text-end text-md-end">
+                    <img src="assets/images/logo.png" class="ms-0 contain" width="60px" height="60px" alt="">
+                    <div class="d-inline-block text-white align-middle me-1">
+                        <h4 class="mb-2">منيع</h4>
+                        <h6 class="mb-0">لخدمات الأمن السيبراني</h6>
+                    </div>
+
+            </div>
+            <div class="col-md-9 my-auto">
+                <div class="list-drop">
+                    <div class="row">
+                        <div class="col-md-8 my-auto">
+                            <ul class="text-center mb-0  px-0">
+                                <li class="nav-item d-inline-block d-none li-head-2 p-0 float-start">
+                                    <span class="btn p-0 m-0 close text-white m-3"><i class="fas fa-times"></i></span>
+                                </li>
+                                <li class="nav-item d-inline-block d-md-none li-head-2">
+                                    <img src="assets/images/logo.png" class="ms-0 contain" width="40px" height="60px" alt="">
+                                    <div class="d-inline-block text-white text-end align-middle me-1">
+                                        <h4 class="mb-2">منيع</h4>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans active"
+                                       href="#">الرئيسية</a>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="#">الأهداف</a>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="">من نحن</a>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="">الخدمات</a>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="#">المميزات</a>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="">الفريق</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-4 my-auto">
+                            <ul class="list-unstyled mb-0">
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="login.html"><i class="fas fa-sign-in-alt ms-1"></i>دخول مستخدم</a>
+                                </li>
+                                <li class="nav-item d-inline-block li-head">
+                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                       href="login.html"><i class="fa-solid fa-house-user ms-1"></i>دخول شركة</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="position-absolute start-0 top-0 mx-2 my-3 d-block d-md-none">
+            <i class="fas fa-list p-2 text-white bg-modal border border-muted bord rounded-2 shadow-sm btn open-left"></i>
+        </div>
+    </div>
+
+</nav>
+<section class="bg-main-slid min-vh-100">
+
+<!--    <img src="assets/images/bg-slider.jpeg" width="100%" class="min-vh-100 cover" style="height: 100vh" alt="">-->
+    <div class="bg-overlay">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="min-vh-100 w-100 d-flex flex-column align-items-center align-items-center-sm justify-content-center pe-5 ps-5">
+                        <h1 class="w-100 fa-3x mb-4 text-white">منصة منيع</h1>
+                        <h4 class="mb-0 text-white lh-base pe-2 ">منصة سيبرانية رقمية تساعدك على تحصين منتجاتك ، وترفع مستوى الأمان فيها ، بدءاً من إدارة ومراقية جميع منتجاتك  والتحديث التلقائي الى إدارة المخاطر و إخختبار جودة المنتج ، بما يتضمن متابعة سير العمل دون انقطاع .</h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="bg-section py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2>أهداف منيع</h2>
+            <p class="text-muted">منتج سعودي يساعدك على إدارة وحماية منتجاتك على مدار الساعة </p>
+        </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <div class="py-4 px-3 shadow-sm rounded-10 border hover-card">
+                            <h4><img src="assets/images/worldwide.png" width="50px" class="align-middle" alt=""><span class="mx-2 align-middle">منع الهجمات السيبرانية</span></h4>
+                            <p class="px-2">يساعد منيع في منع الهجمات السيبرانية ، و المحافظة على الخصوصية</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div class="py-4 px-3 shadow-sm rounded-10 border hover-card">
+                            <h4><img src="assets/images/financial-profit.png" width="50px" class="align-middle" alt=""><span class="mx-2 align-middle">منع الخسائر المادية</span></h4>
+                            <p class="px-2">يساعدك منيع فيتجنب الخسائر المادية ، و المحافظة على أموالك</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div class="py-4 px-3 shadow-sm rounded-10 border hover-card">
+                            <h4><img src="assets/images/badge.png" width="50px" class="align-middle" alt=""><span class="mx-2 align-middle">منع خسارة السمعة</span></h4>
+                            <p class="px-2">يساعدك منيع تجنب خسارة سُّمعة المؤسسة ، و المحافظة على الأمانة</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="text-center mb-4">
+                    <h2>لماذا منيع</h2>
+                    <p class="text-muted">منتج سعودي يساعدك على إدارة وحماية منتجاتك على مدار الساعة </p>
+                </div>
+                <div class="owl-carousel owl-carousel-2 owl-theme">
+                    <div class="item">
+                        <div class="position-relative show-more-images">
+                            <img src="assets/images/lock.png" class="w-100 cover rounded-10" height="300px" alt="">
+                            <div class="overlay-3 text-right rounded-10">
+                                <h3 class="text-center">حماية المنتجات</h3>
+<!--                                <h5 class="text-center"><span class="mx-1">8,560</span>منتج</h5>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="position-relative show-more-images">
+                            <img src="assets/images/check.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                            <div class="overlay-3 text-right rounded-10">
+                                <h3 class="text-center">الأمان</h3>
+<!--                                <h5 class="text-center"><span class="mx-1">8,560</span>منتج</h5>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="position-relative show-more-images">
+                            <img src="assets/images/precision.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                            <div class="overlay-3 text-right rounded-10">
+                                <h3 class="text-center">الخصوصية</h3>
+<!--                                <h5 class="text-center"><span class="mx-1">8,560</span>منتج</h5>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="position-relative show-more-images">
+                            <img src="assets/images/clock.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                            <div class="overlay-3 text-right rounded-10">
+                                <h3 class="text-center">السرعة</h3>
+<!--                                <h5 class="text-center"><span class="mx-1">8,560</span>منتج</h5>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="position-relative show-more-images">
+                            <img src="assets/images/mane.png" class="w-100 cover rounded-10" height="300px" alt="">
+                            <div class="overlay-3 text-right rounded-10">
+                                <h5 class="text-center">بنغازي</h5>
+                                <h5 class="text-center"><span class="mx-1">8,560</span>منتج</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="p-4 mt-4">
+                            <h2 class="mb-4"><img src="assets/images/time.png" width="40px" class="ms-2" alt=""><span class="align-middle text-main">إدارة الثغرات</span></h2>
+                            <h6 class="pe-3 lh-base text-muted">
+                                تشكل الثغرات الأمنية في البرنامج والتطبيقات خطراً عند خرق المعلومات أو التعديل عليها وتعد هذه المشكلة من أكبر التحديات التى قد تواجهك لأنها قد تؤدي الى فشل الأنظمة لذا من المهم أن تشكل حِصناً منيعاً من ثغرات قد تسبب لك كارثة .
+                            </h6>
+                            <ul class="p-0 me-3 text-muted">
+                                <li>عدم السيطرة على حجم المنتجات وصعوبة إدارة ومواجهة كافة الثغرات .</li>
+                                <li>القدرة على سد الثغرات بشكل قوي .</li>
+                                <li>منتج وطني بكفاءة سعودية .</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-auto text-center">
+                        <img src="assets/images/img-security.png" class="w-75 mx-auto rounded-10 contain" height="370px" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-auto text-center text-md-end">
+                        <img src="assets/images/Cyber-Security.png" class="w-75 ms-auto mx-auto-sm rounded-10 contain" height="370px" alt="">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="py-4 mt-4">
+                            <h2 class="mb-4"><img src="assets/images/time.png" width="40px" class="ms-2" alt=""><span class="align-middle text-main">إدارة الثغرات</span></h2>
+                            <h6 class="pe-3 lh-base text-muted">
+                                تشكل الثغرات الأمنية في البرنامج والتطبيقات خطراً عند خرق المعلومات أو التعديل عليها وتعد هذه المشكلة من أكبر التحديات التى قد تواجهك لأنها قد تؤدي الى فشل الأنظمة لذا من المهم أن تشكل حِصناً منيعاً من ثغرات قد تسبب لك كارثة .
+                            </h6>
+                            <ul class="p-0 me-3 text-muted">
+                                <li>عدم السيطرة على حجم المنتجات وصعوبة إدارة ومواجهة كافة الثغرات .</li>
+                                <li>القدرة على سد الثغرات بشكل قوي .</li>
+                                <li>منتج وطني بكفاءة سعودية .</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2>لدى منيع</h2>
+            <p class="text-muted">منتج سعودي يساعدك على إدارة وحماية منتجاتك على مدار الساعة </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="w-80px mx-auto">
+                        <img src="assets/images/tools.png" width="100%" class="contain p-2" alt="">
+                    </div>
+                    <h4 class="mt-2 text-main">هاردوير</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="w-80px mx-auto">
+                        <img src="assets/images/office.png" width="100%" class="contain p-2" alt="">
+                    </div>
+                    <h4 class="mt-2 text-main">منتجات</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="w-80px mx-auto">
+                        <img src="assets/images/windows.png" width="100%" class="contain p-2" alt="">
+                    </div>
+                    <h4 class="mt-2 text-main">أنظمة تشغيل</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="w-80px mx-auto">
+                        <img src="assets/images/coding.png" width="100%" class="contain p-2" alt="">
+                    </div>
+                    <h4 class="mt-2 text-main">مكتبات</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="text-center mb-4">
+                    <h2>خدمات منيع</h2>
+                    <p class="text-muted">منتج سعودي يساعدك على إدارة وحماية منتجاتك على مدار الساعة </p>
+                </div>
+                <div class="owl-carousel owl-carousel-1 owl-theme">
+                    <div class="item">
+                        <div class="border shadow-sm rounded-30 bg-white">
+                            <div class="position-relative">
+                                <img src="assets/images/lock.png" class="w-100 cover rounded-top-30" height="220px"
+                                     alt="">
+                                <a href=""><i
+                                        class="fas fa-heart text-main heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                <div class="position-absolute end-0 bottom-0 my-3 mx-4">
+                                    <a href=""
+                                       class="rounded-pill px-4 py-1 bg-white text-dark fa-1x mx-1 mb-0">منيع</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded-bottom-30">
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-6 my-auto">
+                                        <h5 class="text-main mb-0">مجاناً </h5>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <ul class="list-unstyled text-start p-0 mb-0">
+                                            <li class="text-muted ms-1 d-inline-block font-12 mb-0"><i
+                                                    class="fas fa-eye font-13 ms-1"></i>6.400
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-md-12">
+                                        <h5 class="text-dark mb-3">خدمة رقم 1</h5>
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-map-marker-alt ms-2 text-dark"></i>السعودية,الرياض</h6>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-square ms-2 text-dark"></i>400 م</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3 font-13"><i class="fas fa-user ms-2 text-dark"></i>3
+                                            مستخدم</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="far fa-star text-warning font-13"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="d-flex">
+                                            <img src="assets/images/mane.png" height="40px" width="40px"
+                                                 class="rounded-circle contain border p-1 w-40" alt="">
+                                            <div class="d-inline-block me-2 align-middle">
+                                                <h6 class="font-13 mb-1px">منيع للأمن السيبراني</h6>
+                                                <h6 class="text-muted font-12 mb-0">mhrm781@gmail.com</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto text-start">
+                                        <a href="" class="ms-2"><i
+                                                class="fa-solid fa-envelope h4 mb-0 text-main"></i></a>
+                                        <a href="" class="ms-2"><i class="fab fa-whatsapp h4 mb-0 text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="border shadow-sm rounded-30 bg-white">
+                            <div class="position-relative">
+                                <img src="assets/images/why-mane.jpg" class="w-100 cover rounded-top-30" height="220px"
+                                     alt="">
+                                <a href=""><i
+                                        class="fas fa-heart text-secondary heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                <div class="position-absolute end-0 bottom-0 my-3 mx-4">
+                                    <a href=""
+                                       class="rounded-pill px-4 py-1 bg-white text-dark fa-1x mx-1 mb-0">منيع</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded-bottom-30">
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-6 my-auto">
+                                        <h5 class="text-main mb-0">مجاناً </h5>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <ul class="list-unstyled text-start p-0 mb-0">
+                                            <li class="text-muted ms-1 d-inline-block font-12 mb-0"><i
+                                                    class="fas fa-eye font-13 ms-1"></i>6.400
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-md-12">
+                                        <h5 class="text-dark mb-3">خدمة رقم 2</h5>
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-map-marker-alt ms-2 text-dark"></i>السعودية,الرياض</h6>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-square ms-2 text-dark"></i>400 م</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3 font-13"><i class="fas fa-user ms-2 text-dark"></i>3
+                                            مستخدم</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="far fa-star text-warning font-13"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="d-flex">
+                                            <img src="assets/images/mane.png" height="40px" width="40px"
+                                                 class="rounded-circle contain border p-1 w-40" alt="">
+                                            <div class="d-inline-block me-2 align-middle">
+                                                <h6 class="font-13 mb-1px">منيع للأمن السيبراني</h6>
+                                                <h6 class="text-muted font-12 mb-0">mhrm781@gmail.com</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto text-start">
+                                        <a href="" class="ms-2"><i
+                                                class="fa-solid fa-envelope h4 mb-0 text-main"></i></a>
+                                        <a href="" class="ms-2"><i class="fab fa-whatsapp h4 mb-0 text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="border shadow-sm rounded-30 bg-white">
+                            <div class="position-relative">
+                                <img src="assets/images/clock.jpg" class="w-100 cover rounded-top-30" height="220px"
+                                     alt="">
+                                <a href=""><i
+                                        class="fas fa-heart text-secondary heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                <div class="position-absolute end-0 bottom-0 my-3 mx-4">
+                                    <a href=""
+                                       class="rounded-pill px-4 py-1 bg-white text-dark fa-1x mx-1 mb-0">منيع</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded-bottom-30">
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-6 my-auto">
+                                        <h5 class="text-main mb-0">مجاناً </h5>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <ul class="list-unstyled text-start p-0 mb-0">
+                                            <li class="text-muted ms-1 d-inline-block font-12 mb-0"><i
+                                                    class="fas fa-eye font-13 ms-1"></i>6.400
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-md-12">
+                                        <h5 class="text-dark mb-3">خدمة رقم 3</h5>
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-map-marker-alt ms-2 text-dark"></i>السعودية,الرياض</h6>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-square ms-2 text-dark"></i>400 م</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3 font-13"><i class="fas fa-user ms-2 text-dark"></i>3
+                                            مستخدم</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="fas fa-star text-warning font-13"></i>
+                                        <i class="far fa-star text-warning font-13"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="d-flex">
+                                            <img src="assets/images/mane.png" height="40px" width="40px"
+                                                 class="rounded-circle contain border p-1 w-40" alt="">
+                                            <div class="d-inline-block me-2 align-middle">
+                                                <h6 class="font-13 mb-1px">منيع للأمن السيبراني</h6>
+                                                <h6 class="text-muted font-12 mb-0">mhrm781@gmail.com</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto text-start">
+                                        <a href="" class="ms-2"><i
+                                                class="fa-solid fa-envelope h4 mb-0 text-main"></i></a>
+                                        <a href="" class="ms-2"><i class="fab fa-whatsapp h4 mb-0 text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="border shadow-sm rounded-30 bg-white">
+                            <div class="position-relative">
+                                <img src="assets/images/check.jpg" class="w-100 cover rounded-top-30" height="220px"
+                                     alt="">
+                                <i class="fas fa-heart text-secondary heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i>
+                                <div class="position-absolute end-0 bottom-0 my-3 mx-4">
+                                    <a href=""
+                                       class="rounded-pill px-4 py-1 bg-white text-dark fa-1x mx-1 mb-0">منيع</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-2 rounded-bottom-30">
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-6 my-auto">
+                                        <h5 class="text-main mb-0">مجاناً </h5>
+                                    </div>
+                                    <div class="col-6 my-auto">
+                                        <ul class="list-unstyled text-start p-0 mb-0">
+                                            <li class="text-muted ms-1 d-inline-block font-12 mb-0"><i
+                                                    class="fas fa-eye font-13 ms-1"></i>6.400
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto my-2">
+                                    <div class="col-md-12">
+                                        <h5 class="text-dark mb-3">خدمة رقم 1</h5>
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-map-marker-alt ms-2 text-dark"></i>السعودية,الرياض</h6>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fas fa-square ms-2 text-dark"></i>400 م</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3"><i class="fas fa-user ms-2 text-dark"></i>3
+                                            حمام</h6>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <h6 class="text-dark text-muted mb-3"><i
+                                                class="fa-solid fa-bed ms-2 text-dark"></i>6 غرف</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="d-flex">
+                                            <img src="assets/images/mane.png" height="40px" width="40px"
+                                                 class="rounded-circle contain border p-1 w-40" alt="">
+                                            <div class="d-inline-block me-2 align-middle">
+                                                <h6 class="font-13 mb-1px">منيع للأمن السيبراني</h6>
+                                                <h6 class="text-muted font-12 mb-0">mhrm781@gmail.com</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 my-auto text-start">
+                                        <a href="" class="ms-2"><i
+                                                class="fa-solid fa-envelope h4 mb-0 text-main"></i></a>
+                                        <a href="" class="ms-2"><i class="fab fa-whatsapp h4 mb-0 text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="px-4 mb-3 text-center">
+                    <h2 class="text-dark py-3 px-2 text-center d-inline-block mx-auto mb-0  fa-2x">فريق منيع</h2>
+                    <p class="text-muted">منتج سعودي يساعدك على إدارة وحماية منتجاتك على مدار الساعة </p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img position-relative">
+                                <img src="assets/images/why-mane.jpg" class="img-fluid img-teacher w-100 cover" alt="" height="230px">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Hassan Moharram</h4>
+                                <span>full stack developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img position-relative">
+                                <img src="assets/images/why-mane.jpg" class="img-fluid img-teacher w-100 cover" alt="" height="230px">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Kamal Omary</h4>
+                                <span>web developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img position-relative">
+                                <img src="assets/images/why-mane.jpg" class="img-fluid img-teacher w-100 cover" alt="" height="230px">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Hmoud Helmane</h4>
+                                <span>Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img position-relative">
+                                <img src="assets/images/why-mane.jpg" class="img-fluid img-teacher w-100 cover" alt="" height="230px">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Nowaf alofy</h4>
+                                <span>Programer Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="p-5 border-top mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h4>منيع</h4>
+                    <h6 class="text-muted font-13 lh-base my-3">أكبر منصة إعلانيه عقارية في ليبيا حيث يُتيح
+                        للمستخدم إمكانية البحث عن مجموعة متنوعة من
+                        العقارات التي تُلبي احتياجاته</h6>
+                    <div>
+                        <a href="" class="mx-2"><i class="fab fa-github text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-youtube text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-instagram text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-twitter text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-facebook text-dark"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5 class="mb-3 pe-3">الرئيسية</h5>
+                    <ul class="list-unstyled ps-0 pe-3">
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">أهداف الشركة</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">خدماتنا</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">لماذا منيع</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">إدارة الثغرات</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5 class="mb-3 pe-3">عنا</h5>
+                    <ul class="list-unstyled ps-0 pe-3">
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">من نحن</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">الفريق</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5 class="mb-3 pe-3">تواصل معنا</h5>
+                    <ul class="list-unstyled ps-0 pe-3">
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">info@shield.sa</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">+ 000 000 0000</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">السعودية ، الرياض</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="mb-3 pe-3">الإشتراك في النشرة البريدية</h5>
+                    <form action="">
+                        <input type="text" class="form-control py-2 bg-light" placeholder="أدخل بريدك الإلكتروني">
+                        <a href="" class="btn py-2 mt-2 text-white rounded-10 bg-main d-block">الإشتراك</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-main pt-3">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 mb-3 text-center text-md-start">
+                    <h6 class="text-white">جميع الحقوق محفوظة لمنصة منيع © 2022</h6>
+                </div>
+                <div class="col-md-4 mb-3 text-center text-md-end">
+                    <h6 class="text-white"><span class="ms-2">تطوير</span>شركة درع</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript; choose one of the two! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
+        integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(window).ready(function () {
+        $('.open-left').click(function () {
+            $('.list-drop').toggleClass('menu-sm');
+        })
+        $('.close').click(function () {
+            $('.list-drop').removeClass('menu-sm');
+        });
+    })
+</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+
+    });
+    $('.owl-carousel-1').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-2').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+    $('.owl-carousel-3').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-4').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-5').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-6').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-7').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-8').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-carousel-9').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 0,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-13 d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>
+<script>
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+                $("nav").addClass("bg-main-nav");
+            }else {
+                $("nav").removeClass("bg-main-nav");
+            }
+        })
+    })
+</script>
+</body>
+</html>
