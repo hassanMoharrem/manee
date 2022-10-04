@@ -24,111 +24,65 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<nav class="py-2  fixed-top bg-main-nav">
-    <div class="container-fluid pe-1 ps-0">
-        <div class="row justify-content-center w-100 mx-auto">
-            <div class="col-md-3 my-auto my-auto text-end text-md-end">
-                <img src="assets/images/logo.png" class="ms-0 contain" width="60px" height="60px" alt="">
-                <div class="d-inline-block text-white align-middle me-1">
-                    <h4 class="mb-2">منيع</h4>
-                    <h6 class="mb-0">لخدمات الأمن السيبراني</h6>
-                </div>
-
-            </div>
-            <div class="col-md-9 my-auto">
-                <div class="list-drop">
-                    <div class="row">
-                        <div class="col-md-8 my-auto">
-                            <ul class="text-center mb-0  px-0">
-                                <li class="nav-item d-inline-block d-none li-head-2 p-0 float-start">
-                                    <span class="btn p-0 m-0 close text-white m-3"><i class="fas fa-times"></i></span>
-                                </li>
-                                <li class="nav-item d-inline-block d-md-none li-head-2">
-                                    <img src="assets/images/logo.png" class="ms-0 contain" width="40px" height="60px" alt="">
-                                    <div class="d-inline-block text-white text-end align-middle me-1">
-                                        <h4 class="mb-2">منيع</h4>
-                                    </div>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans active"
-                                       href="#">الرئيسية</a>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="#">الأهداف</a>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="">من نحن</a>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="">الخدمات</a>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="#">المميزات</a>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="">الفريق</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-4 my-auto">
-                            <ul class="list-unstyled mb-0">
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="#learn"><i class="fas fa-sign-in-alt ms-1"></i>دخول مستخدم</a>
-                                </li>
-                                <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="#learn"><i class="fa-solid fa-house-user ms-1"></i>دخول شركة</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="position-absolute start-0 top-0 mx-2 my-3 d-block d-md-none">
-            <i class="fas fa-list p-2 text-white bg-modal border border-muted bord rounded-2 shadow-sm btn open-left"></i>
-        </div>
-    </div>
-
-</nav>
-<section class="mt-50">
+<section class="min-vh-100 d-flex align-items-center justify-content-center">
     <div class="row justify-content-center w-100 mx-auto">
         <div class="col-md-4 text-center">
             <div class="rounded-30 shadow p-3 mt-3 border">
-                <img src="assets/images/logo.png" class="bg-main mn-t-5 mb-3 contain rounded-circle p-2 shadow " alt="" width="100px" height="100px">
+                <a href="index.html"><img src="assets/images/logo.png" class="bg-main mn-t-5 mb-3 contain rounded-circle p-2 shadow " alt="" width="100px" height="100px"></a>
                 <div class="title-form">
-                    <h5 class="mb-2">سجل الدخول لحسابك</h5>
-                    <div class="text-center or position-relative ">
-                        <span class="text-muted position-relative h6 px-4 bg-white">أو</span>
-                    </div>
+                    <h5 class="mb-3">سجل الدخول لحسابك</h5>
 
                 </div>
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item mx-3" role="presentation">
+                        <button class="nav-link rounded-pill active first" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                            <i class="fas fa-user ms-1 font-15"></i><span class="align-middle mx-1">دخول أفراد</span></button>
+                    </li>
+                    <li class="nav-item mx-3" role="presentation">
+                        <button class="nav-link rounded-pill" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            <i class="fas fa-building ms-1 font-15"></i><span class="align-middle mx-1">دخول شركات</span></button>
+                    </li>
+                </ul>
                 <div class="text-center my-3">
-                    <form action="">
-                        <div class="mb-3 text-end">
-                            <label for="email" class="form-label">رقم الجوال أو البريد الإلكتروني</label>
-                            <input class="form-control rounded-pill" id="email" type="text" placeholder="رقم الجوال أو البريد الإلكتروني" aria-label="default input example">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form action="">
+                                <div class="mb-3 text-end">
+                                    <label for="email" class="form-label">رقم الجوال أو البريد الإلكتروني</label>
+                                    <input class="form-control rounded-pill" id="email" type="text" placeholder="رقم الجوال أو البريد الإلكتروني" aria-label="default input example">
+                                </div>
+                                <div class="mb-3 text-end">
+                                    <label for="password" class="form-label ">كلمة المرور</label>
+                                    <input class="form-control rounded-pill" id="password" type="text" placeholder="كلمة المرور" aria-label="default input example">
+                                </div>
+                                <div class="mb-4 text-end">
+                                    <h6 class="text-muted"><a href="" class="text-muted">نسيت كلمة المرور</a></h6>
+                                </div>
+                                <div class="text-start my-3">
+                                    <button type="submit" class="shadow-sm btn btn-sm bg-main rounded-pill ms-3 px-3 py-2 text-white"><span class="h5 mb-0">سجل</span><i class="fas fa-long-arrow-alt-left me-2 h6 mb-0"></i></button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="mb-3 text-end">
-                            <label for="password" class="form-label ">كلمة المرور</label>
-                            <input class="form-control rounded-pill" id="password" type="text" placeholder="كلمة المرور" aria-label="default input example">
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form action="">
+                                <div class="mb-3 text-end">
+                                    <label for="email-2" class="form-label">السجل التجاري</label>
+                                    <input class="form-control rounded-pill" id="email-2" type="text" placeholder="السجل التجاري" aria-label="default input example">
+                                </div>
+                                <div class="mb-3 text-end">
+                                    <label for="password-2" class="form-label ">كلمة المرور</label>
+                                    <input class="form-control rounded-pill" id="password-2" type="text" placeholder="كلمة المرور" aria-label="default input example">
+                                </div>
+                                <div class="mb-4 text-end">
+                                    <h6 class="text-muted"><a href="" class="text-muted">نسيت كلمة المرور</a></h6>
+                                </div>
+                                <div class="text-start my-3">
+                                    <button type="submit" class="shadow-sm btn btn-sm bg-main rounded-pill ms-3 px-3 py-2 text-white"><span class="h5 mb-0">سجل</span><i class="fas fa-long-arrow-alt-left me-2 h6 mb-0"></i></button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="mb-4 text-end">
-                            <h6 class="text-muted"><a href="" class="text-muted">نسيت كلمة المرور</a></h6>
-                        </div>
-                        <div class="text-start my-3">
-                            <button type="submit" class="shadow-sm btn btn-sm bg-main rounded-pill ms-3 px-3 py-2 text-white"><span class="h5 mb-0">سجل</span><i class="fas fa-long-arrow-alt-left me-2 h6 mb-0"></i></button>
-                        </div>
-                    </form>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
                 </div>
 
 <!--                <div class="mt-4 mb-2 text-center">-->
@@ -139,72 +93,7 @@
         </div>
     </div>
 </section>
-<footer>
-    <div class="p-5 border-top mt-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <h4>منيع</h4>
-                    <h6 class="text-muted font-13 lh-base my-3">أكبر منصة إعلانيه عقارية في ليبيا حيث يُتيح
-                        للمستخدم إمكانية البحث عن مجموعة متنوعة من
-                        العقارات التي تُلبي احتياجاته</h6>
-                    <div>
-                        <a href="" class="mx-2"><i class="fab fa-github text-dark"></i></a>
-                        <a href="" class="mx-2"><i class="fab fa-youtube text-dark"></i></a>
-                        <a href="" class="mx-2"><i class="fab fa-instagram text-dark"></i></a>
-                        <a href="" class="mx-2"><i class="fab fa-twitter text-dark"></i></a>
-                        <a href="" class="mx-2"><i class="fab fa-facebook text-dark"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h5 class="mb-3 pe-3">الرئيسية</h5>
-                    <ul class="list-unstyled ps-0 pe-3">
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">أهداف الشركة</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">خدماتنا</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">لماذا منيع</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">إدارة الثغرات</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h5 class="mb-3 pe-3">عنا</h5>
-                    <ul class="list-unstyled ps-0 pe-3">
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">من نحن</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">الفريق</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">سياسة الخصوصية</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h5 class="mb-3 pe-3">تواصل معنا</h5>
-                    <ul class="list-unstyled ps-0 pe-3">
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">info@shield.sa</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">+ 000 000 0000</a></li>
-                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">السعودية ، الرياض</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5 class="mb-3 pe-3">الإشتراك في النشرة البريدية</h5>
-                    <form action="">
-                        <input type="text" class="form-control py-2 bg-light" placeholder="أدخل بريدك الإلكتروني">
-                        <a href="" class="btn py-2 mt-2 text-white rounded-10 bg-primary d-block">الإشتراك</a>
-                    </form>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-main pt-3">
-        <div class="container">
-            <div class="row justify-content-between ">
-                <div class="col-md-4 mb-3 text-center text-md-start">
-                    <h6 class="text-white">جميع الحقوق محفوظة لمنصة منيع © 2022</h6>
-                </div>
-                <div class="col-md-4 mb-3 text-center text-md-end">
-                    <h6 class="text-white"><span class="ms-2">تطوير</span>شركة درع</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 <!-- Optional JavaScript; choose one of the two! -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

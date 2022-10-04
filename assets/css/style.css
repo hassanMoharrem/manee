@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
     direction: rtl;
     text-align: right;
-    background: #FFF;
+    background: #fcfeff;
 }
 a{
     text-decoration: none;
@@ -46,6 +46,9 @@ a{
 }
 .font-15{
     font-size: 15px;
+}
+.font-18{
+    font-size: 18px;
 }
 .mb-1px{
     margin-bottom: 3px;
@@ -85,8 +88,7 @@ a{
 .bg-main-slid{
     background-image: url("../images/slide.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 .elementor-1620 .elementor-element.elementor-element-24c6f6de .wpb-counter {
     background-color: #FFFFFF;
@@ -164,9 +166,33 @@ nav{
     transition: ease-in-out 0.3s;
     color: #fff;
 }
-/*.bg-section{*/
-/*    background-color: #F5F5F5;*/
-/*}*/
+.member-avatar {
+    width: 125px;
+    height: 125px;
+    box-shadow: 0px 5px 5px 0px #0000002b;
+}
+.bg-section{
+    background-color: #fcfeff;
+}
+#myTab .nav-link{
+    padding: 5px 20px !important;
+}
+#myTab .first{
+    padding: 5px 25px !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: linear-gradient(to left , #476CB3 1%, #5E3F99 80% ) !important;
+    color: #FFFFFF !important;
+    border: 1px solid transparent !important;
+    padding: 5px 20px !important;
+
+}
+.nav-tabs {
+    border-bottom: 0 !important;
+}
+.nav-tabs .nav-link{
+    border: 1px solid #ddd !important;
+}
 .form-select{
     background-position: left .75rem center !important;
 }
