@@ -120,7 +120,7 @@ nav{
     transition: ease 0.5s;
 }
 .bg-nav-white{
-    background: rgba(255,255,255,0.1);
+    background: #FFFFFF;
     transition: ease 0.5s;
 }
 .bg-main-nav{
@@ -171,9 +171,9 @@ nav{
     height: 125px;
     box-shadow: 0px 5px 5px 0px #0000002b;
 }
-.bg-section{
-    background-color: #fcfeff;
-}
+/*.bg-section{*/
+/*    background-color: #fcfeff;*/
+/*}*/
 #myTab .nav-link{
     padding: 5px 20px !important;
 }

@@ -24,14 +24,14 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<nav class="py-2  fixed-top bg-nav-white">
+<nav class="py-2  fixed-top bg-nav-white shadow border-bottom">
     <div class="container-fluid pe-1 ps-0">
         <div class="row justify-content-center w-100 mx-auto">
             <div class="col-md-3 my-auto my-auto text-end text-md-end">
-                    <img src="assets/images/logo.png" class="ms-0 contain" width="60px" height="60px" alt="">
-                    <div class="d-inline-block text-white align-middle me-1">
+                    <img src="assets/images/mane.png" class="ms-0 contain" width="60px" height="60px" alt="">
+                    <div class="d-inline-block text-dark align-middle me-1">
                         <h4 class="mb-2">منيع</h4>
-                        <h6 class="mb-0">لخدمات الأمن السيبراني</h6>
+<!--                        <h6 class="mb-0">لخدمات الأمن السيبراني</h6>-->
                     </div>
 
             </div>
@@ -41,36 +41,36 @@
                         <div class="col-md-8 my-auto">
                             <ul class="text-center mb-0  px-0">
                                 <li class="nav-item d-inline-block d-none li-head-2 p-0 float-start">
-                                    <span class="btn p-0 m-0 close text-white m-3"><i class="fas fa-times"></i></span>
+                                    <span class="btn p-0 m-0 close text-dark m-3"><i class="fas fa-times"></i></span>
                                 </li>
                                 <li class="nav-item d-inline-block d-md-none li-head-2">
                                     <img src="assets/images/logo.png" class="ms-0 contain" width="40px" height="60px" alt="">
-                                    <div class="d-inline-block text-white text-end align-middle me-1">
+                                    <div class="d-inline-block text-dark text-end align-middle me-1">
                                         <h4 class="mb-2">منيع</h4>
                                     </div>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans active"
+                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans active"
                                        href="#">الرئيسية</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
                                        href="#goals">الأهداف</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
                                        href="#who">من نحن</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
                                        href="#services">الخدمات</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
                                        href="#why">لماذا منيع</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
                                        href="#team">الفريق</a>
                                 </li>
 
@@ -79,12 +79,12 @@
                         <div class="col-md-4 my-auto">
                             <ul class="list-unstyled mb-0">
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="login.html"><i class="fas fa-sign-in-alt ms-1"></i>دخول مستخدم</a>
+                                    <a class="nav-link font-15 mx-1 mb-0 text-dark px-1 border-trans rounded-pill py-2 bg-white px-3"
+                                       href="login.html">تسجيل دخول</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-white px-1 border-trans"
-                                       href="login.html"><i class="fa-solid fa-house-user ms-1"></i>دخول شركة</a>
+                                    <a class="nav-link font-15 mx-1 mb-0 text-white px-1 border-trans rounded-pill py-2 bg-primary px-3"
+                                       href="login.html">جرب الآن</a>
                                 </li>
                             </ul>
                         </div>
@@ -879,7 +879,7 @@
         $(window).scroll(function(){
             var scroll = $(window).scrollTop();
             if (scroll > 100) {
-                $("nav").addClass("bg-main-nav");
+                $("nav").addClass("bg-white");
             }else {
                 $("nav").removeClass("bg-main-nav");
             }
