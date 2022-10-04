@@ -86,9 +86,121 @@ a{
     padding: 5px 7px;
 }
 .bg-main-slid{
-    background-image: url("../images/slide.jpg");
+    background: linear-gradient(to left , #476CB3 1%, #5E3F99 80% ) !important;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.opasity-0 {
+    opacity: 0;
+}
+
+.opasity-1 {
+    opacity: 1 !important;
+    transition: 2s all;
+}
+
+.opacity-0-e {
+    opacity: 0 !important;
+}
+.text-main-new-primary{
+    color:#2e66f5 !important ;
+}
+.bg-main-new-primary{
+    background-color:#2e66f5 !important ;
+}
+.apple h5 {
+    color: #277093;
+}
+
+.bg-edit {
+    background-color: #558889;
+    transition: ease 1s;
+}
+
+.bg-edit-microsoft {
+    background-color: #A14148;
+    transition: ease 1s;
+}
+
+.text-main-danger {
+    color: #0d6efd;
+}
+
+.text-main-success, .text-main {
+    color: #558889;
+}
+
+.bg-edit-2 {
+    background-color: #0d6efd;
+    transition: ease 1s;
+}
+.safe, .safe-2 {
+    opacity: 0;
+}
+
+.text-gr {
+    color: #40ADB0;
+}
+
+.typed-out {
+    overflow: hidden;
+    animation: typing 5s forwards;
+    white-space: nowrap;
+    border-right: 2px solid #558889;
+    width: 0;
+    color: #FFFFFF;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+.text-main-success, .text-main {
+    color: #558889;
+}
+
+.bg-edit-2 {
+    background-color: #0d6efd;
+    transition: ease 1s;
+}
+
+.bg-edit h5, .bg-edit-2 {
+    color: #FFFFFF !important;
+    transition: ease 1s;
+
+}
+
+.typed-out-2 {
+    overflow: hidden;
+    opacity: 1 !important;
+    animation: typing-2 5s forwards;
+    white-space: nowrap;
+    width: 0;
+}
+
+@keyframes typing-2 {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+.icon-input {
+    margin: 13px 15px;
+    font-size: 15px;
+}
+.rounded-left-top {
+    border-top-left-radius: .3rem !important;
+    border-bottom-left-radius: .3rem !important;
+}
+.logo-overlay {
+    z-index: 25;
+    top: 100px;
 }
 .elementor-1620 .elementor-element.elementor-element-24c6f6de .wpb-counter {
     background-color: #FFFFFF;
@@ -278,6 +390,17 @@ nav{
     object-fit: contain;
 }
 @media (max-width: 768px) {
+    .order-sm-1s {
+        order: 1;
+    }
+
+    .order-sm-2s {
+        order: 2;
+    }
+
+    .order-sm-3s {
+        order: 3;
+    }
     .list-drop {
         margin-right: -250px;
         visibility: hidden;
