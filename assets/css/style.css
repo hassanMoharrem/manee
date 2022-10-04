@@ -264,6 +264,9 @@ nav{
     opacity: 1;
     bottom: 15px;
 }
+.member:hover .backdrop{
+    backdrop-filter: blur(5px);
+}
 .member .member-info {
     padding: 25px 15px;
 }
@@ -273,7 +276,7 @@ nav{
     border-radius: 50%;
     width: 36px;
     height: 36px;
-    background: rgba(3, 80, 180, 0.8);
+    background: rgba(85, 80, 163, 0.8);
     display: inline-block;
     transition: ease-in-out 0.3s;
     color: #fff;
