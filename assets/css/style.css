@@ -260,12 +260,20 @@ nav{
     text-align: center;
     z-index: 1000;
 }
+.z-0{
+    z-index: -1 !important;
+    opacity: 0;
+    transition: all 1s;
+}
 .member:hover .social {
     opacity: 1;
     bottom: 15px;
 }
-.member:hover .backdrop{
-    backdrop-filter: blur(5px);
+.member:hover .z-0{
+    z-index: 1 !important;
+    opacity: 1;
+    transition: all 1s;
+    bottom: 100%;
 }
 .member .member-info {
     padding: 25px 15px;
@@ -392,6 +400,7 @@ nav{
 .contain{
     object-fit: contain;
 }
+
 @media (max-width: 768px) {
     .order-sm-1s {
         order: 1;
