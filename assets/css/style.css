@@ -20,6 +20,15 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+nav a , nav h4{
+    color: white !important;
+}
+.nav-color a , .nav-color h4{
+    color: black !important;
+}
+.nav-color .try{
+    color: #FFFFFF !important;
+}
 .bg-liner{
     background: linear-gradient(to left , #476CB3 1%, #5D4EA1 80% )
 }
@@ -34,6 +43,9 @@ a{
     padding: 5px 15px 20px 15px;
     color: #FFF;
     background: linear-gradient(to top, #000, transparent);
+}
+.w-85{
+    width: 85%;
 }
 .h6{
     font-size: 17px !important;
@@ -106,7 +118,7 @@ a{
     color:#2e66f5 !important ;
 }
 .bg-main-new-primary{
-    background-color:#2e66f5 !important ;
+    background-color:#FFFFFF !important ;
 }
 .apple h5 {
     color: #277093;
@@ -118,7 +130,7 @@ a{
 }
 
 .bg-edit-microsoft {
-    background-color: #A14148;
+    background-color: #FFFFFF;
     transition: ease 1s;
 }
 
@@ -149,6 +161,7 @@ a{
     border-right: 2px solid #558889;
     width: 0;
     color: #FFFFFF;
+    padding: 0 6px;
 }
 
 @keyframes typing {
@@ -440,9 +453,23 @@ nav{
         padding: 10px !important;
         margin: 0 20px !important;
     }
+    .li-head a{
+        color: white !important;
+    }
+    .li-head .login1{
+        color: black !important;
+    }
     .li-head-2 {
         display: inline-block !important;
         padding: 0 7px !important;
+    }
+    .li-head-2 h4 , .li-head-2 i{
+        display: inline-block !important;
+        padding: 0 7px !important;
+        color: #FFFFFF !important;
+    }
+    .mt-500{
+        margin-top: 100px !important;
     }
     li .active{
         display: inline-block !important;

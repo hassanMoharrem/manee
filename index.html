@@ -26,12 +26,12 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<nav class="py-1  fixed-top bg-nav-white shadow border-bottom">
+<nav class="py-1  fixed-top">
     <div class="container pe-1 ps-0">
         <div class="row justify-content-center w-100 mx-auto">
             <div class="col-md-3 my-auto my-auto text-end text-md-end">
-                    <img src="assets/images/mane.png" class="ms-0 contain" width="60px" height="60px" alt="">
-                    <div class="d-inline-block text-dark align-middle me-1">
+                    <img src="assets/images/logo.png" id="my_image" class="ms-0 contain" width="60px" height="60px" alt="">
+                    <div class="d-inline-block align-middle me-1">
                         <h4 class="mb-2">منيع</h4>
 <!--                        <h6 class="mb-0">لخدمات الأمن السيبراني</h6>-->
                     </div>
@@ -43,36 +43,36 @@
                         <div class="col-md-8 my-auto">
                             <ul class="text-center mb-0  px-0">
                                 <li class="nav-item d-inline-block d-none li-head-2 p-0 float-start">
-                                    <span class="btn p-0 m-0 close text-dark m-3"><i class="fas fa-times"></i></span>
+                                    <span class="btn p-0 m-0 close m-3"><i class="fas fa-times"></i></span>
                                 </li>
                                 <li class="nav-item d-inline-block d-md-none li-head-2">
                                     <img src="assets/images/logo.png" class="ms-0 contain" width="40px" height="60px" alt="">
-                                    <div class="d-inline-block text-dark text-end align-middle me-1">
+                                    <div class="d-inline-block text-end align-middle me-1">
                                         <h4 class="mb-2">منيع</h4>
                                     </div>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans active"
+                                    <a class="nav-link h6 mx-1 mb-0 px-1 border-trans active"
                                        href="#">الرئيسية</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 px-1 border-trans"
                                        href="#strong">قوة منيع</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 px-1 border-trans"
                                        href="#goals">لماذا منيع</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 px-1 border-trans"
                                        href="#who">مميزات</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 px-1 border-trans"
                                        href="#services">يدعم منيع</a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link h6 mx-1 mb-0 text-dark px-1 border-trans"
+                                    <a class="nav-link h6 mx-1 mb-0 px-1 border-trans"
                                        href="#team">الفريق</a>
                                 </li>
 
@@ -81,11 +81,11 @@
                         <div class="col-md-4 my-auto">
                             <ul class="list-unstyled mb-0 text-start">
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link font-15 mx-1 mb-0 text-dark px-1 border-trans rounded-pill py-2 bg-white px-3"
+                                    <a class="nav-link font-15 mx-1 mb-0 text-dark px-1 border-trans rounded-pill py-2 bg-white px-3 login1 text-center"
                                        href="login.html"><i class="fas fa-sign-in-alt ms-2"></i>تسجيل دخول </a>
                                 </li>
                                 <li class="nav-item d-inline-block li-head">
-                                    <a class="nav-link font-15 mx-1 mb-0 text-white px-1 border-trans rounded-pill py-2 bg-main px-3"
+                                    <a class="nav-link font-15 mx-1 mb-0 text-white try  px-1 border-trans rounded-pill py-2 bg-main text-center px-3"
                                        href="login.html">جرب الآن</a>
                                 </li>
                             </ul>
@@ -97,7 +97,7 @@
             </div>
         </div>
         <div class="position-absolute start-0 top-0 mx-2 my-3 d-block d-md-none">
-            <i class="fas fa-list p-2 text-white bg-modal border border-muted bord rounded-2 shadow-sm btn open-left"></i>
+            <i class="fas fa-list p-2 text-dark bg-modal border border-muted bord rounded-2 shadow-sm btn open-left"></i>
         </div>
     </div>
 
@@ -116,72 +116,45 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center my-auto">
-                    <div class="row justify-content-center py-4">
-                        <div class="col-md-5 my-2 my-md-auto text-center order-sm-3s">
-                            <div class="rounded-30 border  opasity-0 image-apple bg-white p-2 shadow my-2">
-                                <div class="border-bottom py-2 border-2">
-                                    <h3 class="text-main-new-primary"><i
-                                            class="fab fa-apple fa-2x text-main-new-primary"></i>
-                                    </h3>
-                                </div>
-                                <div class="p-3">
-                                    <h6 class="safe text-main-new-primary mb-0 p-2 text-center"><i
-                                            class="fas fa-check-circle ms-1"></i>منتج آمن</h6>
-
-                                    <h6 class="safe text-dark font-13 mb-0 p-2 mx-1 mb-0 text-center"><img
-                                            src="assets/images/installing-updates.gif"
-                                            width="20px"
-                                            alt="" class="ms-2">3.5.6<img
-                                            src="assets/images/checked-simple-flat.gif"
-                                            width="20px" class="mx-2" alt="">مُحدّث</h6>
-
-                                </div>
-                            </div>
-                            <div class="rounded-30 border bg-white p-2 shadow  opasity-0 image-apple">
-                                <div class="border-bottom py-2 border-2">
-                                    <h3 class="text-main-danger"><i
-                                            class="fab fa-windows fa-2x text-main-danger"></i>
-                                    </h3>
-                                </div>
-                                <div class="p-3">
-                                    <h6 class="safe text-main-danger h6 mb-0 p-2 text-center"><i
-                                            class="fas fa-times-circle ms-1"></i>غير آمن</h6>
-                                    <h6 class="safe text-dark font-13 mb-0 p-2 text-center"><img
-                                            src="assets/images/installing-updates.gif"
-                                            width="20px"
-                                            alt="" class="ms-2">3.5.6<img
-                                            src="assets/images/error.gif" width="19px"
-                                            class="me-2 ms-1"
-                                            alt="">يحتاج لتحديث</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 my-2 my-md-auto text-center order-sm-2s">
+                    <div class="row justify-content-end py-4">
+                        <div class="col-md-7 my-2 my-md-auto text-center order-sm-2s">
                             <div class="py-2 px-0 m-2">
                                 <div class="border-bottom py-2 text-start" dir="ltr">
                                     <i class="fas fa-search d-inline-block text-white me-1"></i>
                                     <div class="d-inline-block text-start align-middle">
-                                        <h5 class="typed-out h5 mb-0  d-inline-block">Apple & Microsoft</h5>
+                                        <h5 class="typed-out h4 mb-0  d-inline-block">Apple & Microsoft</h5>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="rounded-30  opasity-0 list-apple bg-white py-3 shadow">
+                            <div class="rounded-30 py-0">
                                 <div class="  text-start">
-                                    <div class="border-bottom py-2  px-4   border-2">
-                                        <h4 class="text-main">Google<i class="fab fa-google h3 mx-2"></i></h4>
+                                    <div class="apple  px-4 py-3 opasity-0 list-apple rounded-3 mb-2">
+                                        <div class="row">
+                                            <div class="col-8 text-end">
+                                                <h5 class="text-main mb-0 "><img src="assets/images/python.png" class="ms-2" width="25px" alt="">منتج آمن</h5>
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="assets/images/check.png" width="25px" alt=""><span class="text-main align-middle me-2">3.1.6</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="border-bottom apple  px-4 py-2 border-2">
-                                        <h4 class="text-white">Apple<i class="fab fa-apple h3 mx-2"></i></h4>
+                                    <div class="apple-2 opasity-0 image-apple  px-4 py-3  rounded-3 mb-0">
+                                        <div class="row">
+                                            <div class="col-8 text-end">
+                                                <h5 class="text-main mb-0 "><img src="assets/images/sony.png" class="ms-2" width="25px" alt="">منتج غير آمن</h5>
+                                            </div>
+                                            <div class="col-4">
+                                                <img src="assets/images/cancel.png" width="25px" alt=""><span class="text-main align-middle me-2">3.1.6</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="border-bottom apple-2 py-2  px-4 border-2">
-                                        <h4 class="text-white">Microsoft<i class="fab fa-windows h3 mx-2"></i>
-                                        </h4>
-                                    </div>
-                                    <div class="pt-2  px-4">
-                                        <h4 class="text-main d-inline-block">Sony</h4><img
-                                            src="assets/images/sony.png" width="30px"
-                                            class="d-inline-block mx-2" alt="">
+                                    <div class="px-1 py-1 rounded-3 mb-2">
+                                        <div class="row">
+                                            <div class="col-md-12 text-end">
+                                                <h5 class="text-white safe">يدعم <img src="assets/images/google.png" width="20px" class="me-2" alt=""><img src="assets/images/apple-logo.png" width="20px" class="me-3" alt=""><img src="assets/images/microsoft.png" width="20px" class="me-3" alt=""><img src="assets/images/office(1).png" width="20px" class="me-3" alt=""><img src="assets/images/sony(1).png" width="50px" class="me-3" alt=""></h5>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -292,13 +265,13 @@
                         </div>
                     </div>
                     <div class="col-md-6 my-auto text-center">
-                        <img src="assets/images/img-security.png" class="w-75 mx-auto rounded-10 contain" height="370px" data-aos="fade-left" data-aos-duration="2000" alt="">
+                        <img src="assets/images/2.png" class="w-85 mx-auto rounded-10 contain" height="370px" data-aos="fade-left" data-aos-duration="2000" alt="">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6 my-auto text-center">
-                        <img src="assets/images/img-security.png" class="w-75 mx-auto rounded-10 contain" data-aos="fade-right" data-aos-duration="2000" height="370px" alt="">
+                        <img src="assets/images/1.png" class="w-85 mx-auto rounded-10 contain" data-aos="fade-right" data-aos-duration="2000" height="370px" alt="">
                     </div>
                     <div class="col-md-6 ">
                         <div class="p-4 mt-4" data-aos="fade-left" data-aos-duration="2000">
@@ -330,7 +303,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 my-auto text-center text-md-end">
-                        <img src="assets/images/Cyber-Security.png" class="w-75 ms-auto mx-auto-sm rounded-10 contain" data-aos="fade-left" data-aos-duration="2000" height="370px" alt="">
+                        <img src="assets/images/3.png" class="w-85 ms-auto mx-auto-sm rounded-10 contain" data-aos="fade-left" data-aos-duration="2000" height="370px" alt="">
                     </div>
                 </div>
             </div>
@@ -733,10 +706,12 @@
     $(document).ready(function(){
         $(window).scroll(function(){
             var scroll = $(window).scrollTop();
-            if (scroll > 100) {
-                $("nav").addClass("bg-white");
+            if (scroll > 150) {
+                $("nav").addClass("bg-white nav-color shadow");
+                $("#my_image").attr("src","assets/images/mane.png");
             }else {
-                $("nav").removeClass("bg-main-nav");
+                $("nav").removeClass("bg-main-nav bg-white nav-color shadow");
+                $("#my_image").attr("src","assets/images/logo.png");
             }
         })
     })
@@ -759,22 +734,22 @@
         }, 3000);
         setInterval(function () {
             $('.apple').addClass("bg-main-new-primary")
-        }, 4000);
+        }, 3500);
         setInterval(function () {
             $('.microsoft').addClass("bg-edit-microsoft")
-        }, 5000);
+        }, 8000);
         setInterval(function () {
             $('.safe').addClass("typed-out-2")
         }, 6000);
         setInterval(function () {
             $('.image-apple').addClass("opasity-1")
-        }, 5000);
+        }, 5500);
         setInterval(function () {
             $('.list-apple-2').addClass("opasity-1")
         }, 3000);
         setInterval(function () {
             $('.apple-2').addClass("bg-edit-microsoft")
-        }, 4500);
+        }, 6000);
         setInterval(function () {
             $('.image-apple-2').addClass("opasity-1")
         }, 5000);
