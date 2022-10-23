@@ -35,6 +35,9 @@ nav a , nav h4{
 .w-auto{
     width: auto !important;
 }
+.bottom-20{
+    bottom: 30px;
+}
 .overlay-3{
     position: absolute;
     bottom: 0;
@@ -193,6 +196,8 @@ nav a , nav h4{
     animation: typing-2 5s forwards;
     white-space: nowrap;
     width: 0;
+    height: 40px;
+    font-size: 18px;
 }
 
 @keyframes typing-2 {
@@ -364,6 +369,9 @@ nav{
 .bottom-60{
     bottom: 60px
 }
+.font-23{
+    font-size: 23px;
+}
 .owl-nav{
     position: absolute;
     top: -40px;
@@ -497,10 +505,13 @@ nav{
         border-left: 0 !important;
     }
     .align-items-center-sm{
-        padding: 100px 10px !important;
+        padding: 100px 10px 10px 10px !important;
         align-items: initial !important ;
         justify-content: initial !important;
 
+    }
+    .font-16-sm{
+        font-size: 16px;
     }
     .fa-3x{
         font-size: 28px !important;
@@ -510,7 +521,7 @@ nav{
         background-position: initial !important;
     }
     .min-vh-100{
-        min-height: 75vh !important;
+        min-height: 35vh !important;
     }
     .mx-auto-sm{
         margin-right:auto !important;
