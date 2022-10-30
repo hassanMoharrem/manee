@@ -2,6 +2,10 @@
     src: url("../fonts/Tajawal-Regular.ttf");
     font-family: "main";
 }
+@font-face {
+    src: url("../fonts/Cairo-Regular.ttf");
+    font-family: "main-2";
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -19,6 +23,14 @@ body {
 a{
     text-decoration: none;
     color: #FFFFFF;
+}
+.change-font{
+    font-family: "main-2", sans-serif;
+}
+.color-gradient{
+    background: -webkit-linear-gradient( #FFF , rgba(47,130,255,0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 nav a , nav h4{
     color: white !important;
@@ -119,7 +131,7 @@ nav a , nav h4{
     background-size: 100%;
 }
 .bg-image-fixed{
-    background-image: url("../images/fixed.jpg");
+    background-image: url("../images/bg-color-2.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
@@ -187,7 +199,19 @@ nav a , nav h4{
     color: #FFFFFF;
     padding: 0 6px;
 }
-
+.text-area{
+    border-radius: 15px !important;
+    height: 100px !important;
+}
+.form_edit .form-control {
+    height: 40px;
+    background: #F0F0F0;
+    border-radius: 25px;
+    box-shadow: none;
+    border: 1px solid #dddddd;
+    color: #0F0F0F;
+    margin-bottom: 10px;
+}
 @keyframes typing {
     from {
         width: 0
@@ -295,8 +319,8 @@ nav{
 .bg-light-edit{
     background-image: url("../images/bg-image-dera.png");
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 70%;
+    background-position: top right -60%;
+    background-size: 50%;
     background-color: #fafafb !important;
 }
 .bg-area{
@@ -475,7 +499,9 @@ nav{
 .contain{
     object-fit: contain;
 }
-
+.btn-check:focus + .btn , .btn:focus{
+    box-shadow: 0 0 0 !important;
+}
 @media (max-width: 768px) {
     .order-sm-1s {
         order: 1;
