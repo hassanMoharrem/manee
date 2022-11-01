@@ -1,0 +1,26 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "main", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    direction: ltr;
+    text-align: left;
+    background: #fcfeff;
+}
+.bg-triangle {
+    background-image: url("../images/bg-triangle-en.png");
+    background-position: right;
+}
+.bg-light-edit {
+    background-image: url("../images/bg-image-dera.png");
+    background-position: top left -60% !important;
+
+}
+.text-left-important{
+    text-align: left !important;
+}
